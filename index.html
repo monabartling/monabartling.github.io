@@ -1,37 +1,239 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<title>Mona Bartling</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-You can use the [editor on GitHub](https://github.com/monabartling/monabartling.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-### Markdown
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('img/seafloor.png');
+  opacity:100% !important;
+  min-height: 50%;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
 
-```markdown
-Syntax highlighted code block
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+<body>
 
-1. Numbered
-2. List
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="color:white">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button" >MONA BARTLING</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> PUBLICATIONS</a> 
+	<a href="#community" class="w3-bar-item w3-button w3-hide-small"> COMMUNITY</a> 
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"> CONTACT</a>
+	<a href="img/cv.pdf" target="_blank" class="w3-bar-item w3-button w3-hide-small"> CV</a>
+  </div>
 
-**Bold** and _Italic_ and `Code` text
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+	<a href="#community" class="w3-bar-item w3-button" onclick="toggleFunction()">COMMUNITY</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+	<a href="img/cv.pdf" target="_blank" class="w3-bar-item w3-button" onclick="toggleFunction()">CV</a>
+  </div>
+</div>
 
-[Link](url) and ![Image](src)
-```
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap; top:90% !important">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity" style="background-color:#0000 !important">MONA BARTLING<span class="w3-hide-small"></span> </span>
+  </div>
+</div>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about" style="padding-top: 10px !important; padding-bottom: 10px !important">
+  <h3 class="w3-center" style="padding-bottom: 20px !important">Research • Cartography • Geography • Design</h3>
+  <div class="w3-col m6 w3-center w3-padding-large" style="opacity:90%">
+      <img src="img/me.jpg" class="w3-round w3-image " alt="Photo of Me" width="200" height="100">
+    </div>
+  <p>I am a PhD candidate and researcher at the Department of Geoinformatics - Z_GIS at the University of Salzburg. 
+  I have a strong research focus on map design usability, map use context, and map design adaptations. 
+  I have 5+ years work experiences in digital agriculture where I worked in various international research institutes. </p>
+  <p>I have a passion for cartographic design, and I am aiming to look at the margins of map design solutions. You can find my full CV <a href="img/cv.pdf" target=”_blank”>here!</a> </p>
+  <p>
+  I enjoy hiking, yoga, and all sorts of water sports. I also collaborate with friends on <a href="https://farodesign.at" target=”_blank”>FARO.design</a>, where we create geographic-inspired t-shirt designs. 
+  </p>
 
-### Jekyll Themes
+  <div class="w3-row">
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/monabartling/monabartling.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+  </div>
 
-### Support or Contact
+</div>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio" style="padding-bottom: 10px !important">
+  <h3 class="w3-center">PUBLICATIONS</h3>
+  <p class="w3-center" style="margin-top: -5px !important"><em>[selection]</em></p>
+  <p>
+  Bartling, M., Robinson, A. C., Resch, B., Eitzinger, A., & Atzmanstorfer, K. (2021). The Role of User Context in the Design of Mobile Map Applications. 
+  Cartography and Geographic Information Science. <a href="https://doi.org/10.1080/15230406.2021.1933595" target=”_blank”>https://doi.org/10.1080/15230406.2021.1933595</a>
+  </p>
+  <p>
+  Bartling, M., Resch, B., Trösterer, S., & Eitzinger, A. (2021). Evaluating PPGIS Usability in a Multi-National Field Study Combining Qualitative Surveys and Eye-Tracking. The Cartographic Journal. 
+  <a href="https://doi.org/10.1080/00087041.2020.1842143" target=”_blank”>https://doi.org/10.1080/00087041.2020.1842143</a>
+  </p>
+  <p>
+  Eitzinger, A., Bartling, M., Feil, C., Bonilla-Findji, O., Andrieu, N., & Jarvis, A. (2020). GeoFarmer App: A tool to complement extension services and foster active farmers participation and knowledge exchange. 
+  Report available:  
+  <a href="https://cgspace.cgiar.org/handle/10568/107365" target=”_blank”>https://cgspace.cgiar.org/handle/10568/107365</a>
+  </p>
+  <p>
+  Eitzinger, A., Cock, J., Atzmanstorfer, K., Binder, C. R., Läderach, P., Bonilla-Findji, O., Bartling, M., ... & Jarvis, A. (2019). GeoFarmer: A monitoring and feedback system for agricultural development projects. Computers and electronics in agriculture, 158, 109-121.  
+  <a href="https://doi.org/10.1016/j.compag.2019.01.049 " target=”_blank”>https://doi.org/10.1016/j.compag.2019.01.049 </a>
+  </p>
+  <p>
+  Bartling, M., Resch, B., Eitzinger, A., & Zurita-Arthos, L. (2019). A multi-national human–computer interaction evaluation of the public participatory GIS GeoCitizen. GI_Forum 2019,, 7, 19-39. DOI: 10.1553/giscience2019_01_s18
+  </p>
+  <p>
+  Bartling, M., Sotelo, S., Eitzinger, A., & Atzmanstorfer, K. (2016). Press the Button: Online/Offline Mobile Applications in an Agricultural Context. GI_Forum 2016,, 4, 106-116. DOI: 10.1553/giscience2016_01_s106
+  </p>
+ </div>
+  
+  
+ <!-- Container (Community Section) -->
+<div class="w3-content w3-container w3-padding-64" id="community" style="padding-bottom: 10px !important">
+  <h3 class="w3-center">COMMUNITY ENGAGEMENT</h3>
+  <p class="w3-center" style="margin-top: -5px !important"><em>[selection]</em></p>
+  
+  <p>
+  2021: “When things go wrong –conducting research during a pandemic” ICA workshop on Adaptable Research Methods For Empirical Research with Map Users 
+  <a href="https://cogvis.icaci.org/21_adaptable.html" target=”_blank”>(cogvis.icaci.org/21_adaptable.html)</a>
+  </p>
+  <p>
+  Since 2020: NACIS membership
+  </p>
+  <p>
+  2020: “Digital tools for farmers advisory and climate action” online webinar series of the CGIAR Platform for Big Data in Agriculture  
+  <a href="https://bigdata.cgiar.org/blog-post/webinar-digital-tools-for-farmers-advisory-and-climate-action/" target=”_blank”>(bigdata.cgiar.org/blog-post/webinar-digital-tools-for-farmers-advisory-and-climate-action)</a>
+  </p>
+  <p>
+  2015-2020: Thesis coordinator/supervisor at UNIGIS, Latin America
+  </p>
+  <p>
+  2018: “Smart monitoring of farm labor productivity” pitch invitation as one of the inspire challenge finalists at the Big Data in Agriculture Convention 2018, Nairobi, Kenya 
+  </p>
+  <p>
+  2017: “’Flat’ Learning Alliance for Extension” pitch invitation as one of the inspire challenge finalists at the Big Data in Agriculture Convention 2017, Cali, Colombia
+  </p>
+ </div>
+
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p>
+  <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+  Email: <a href="mailto:mona.bartling@sbg.ac.at">mona.bartling@sbg.ac.at</a>
+  </p>
+  <p><i class="fa fa-university fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+  University website: 
+  <a href="https://www.plus.ac.at/zgis/department/team/bartling/?lang=en" target="_blank">University of Salzburg Profile</a>
+  and
+  <a href="https://dk-giscience.zgis.net/research/students/students-2015/58-students2015/314-mona-bartling" target="_blank">Doctoral College Profile</a>
+  </p>
+  <p>
+  <i class="fa fa-link fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+  Google Scholar: <a href="https://scholar.google.at/citations?user=3GoPCC0AAAAJ&hl=en" target="_blank">Mona Bartling Google Scholar Profile</a>
+  </p>
+  <p>
+  <i class="fa fa-link fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+  ORCID: <a href="https://orcid.org/0000-0001-8362-7543" target="_blank">orcid.org/0000-0001-8362-7543</a></p>
+  
+  <p><i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+  LinkedIn: <a href="https://www.linkedin.com/in/mona-bartling-b37aa298/" target="_blank">Mona Bartling LinkedIn Profile</a>
+  </p> 
+  <p>
+  <i class="fa fa-twitter fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+  Twitter: <a href="https://twitter.com/monabartling" target="_blank">twitter.com/monabartling</a>
+  </p>
+	
+  
+</div>
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>
+	Mona Bartling 2021
+	</p>
+
+</footer>
+ 
+ 
+ 
+ 
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
