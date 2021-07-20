@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<title>Mona Bartling</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="res/style2.css">
+<link rel="stylesheet" href="res/font_google_lato.css">
+<link rel="stylesheet" href="res/fontawesome/css/fontawesome.min.css">
+<link rel="stylesheet" href="res/fontawesome/css/brands.css">
+<link rel="stylesheet" href="res/fontawesome/css/solid.css">
+<link rel="shortcut icon" type="image/x-icon" href="res/favicon.png">
+
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('res/seafloor.png');
+  opacity:100% !important;
+  min-height: 50%;
+}
+
+.font-wide {letter-spacing: 10px;}
+.hover-design-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="top-content" style="color:white">
+  <div class="bar-nav" id="myNavbar">
+    <a class="bar-nav-item button-design hover-design-black hide-content-medium hide-content-large content-right-design" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="bar-nav-item button-design" >MONA BARTLING</a>
+    <a href="#portfolio" class="bar-nav-item button-design hide-content-small"> PUBLICATIONS</a> 
+	<a href="#community" class="bar-nav-item button-design hide-content-small"> COMMUNITY</a> 
+    <a href="#contact" class="bar-nav-item button-design hide-content-small"> CONTACT</a>
+	<a href="res/cv.pdf" target="_blank" class="bar-nav-item button-design hide-content-small"> CV</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="bar-nav-block content-white-design hide-content hide-content-large hide-content-medium">
+    <a href="#portfolio" class="bar-nav-item button-design" onclick="toggleFunction()">PORTFOLIO</a>
+	<a href="#community" class="bar-nav-item button-design" onclick="toggleFunction()">COMMUNITY</a>
+    <a href="#contact" class="bar-nav-item button-design" onclick="toggleFunction()">CONTACT</a>
+	<a href="res/cv.pdf" target="_blank" class="bar-nav-item button-design" onclick="toggleFunction()">CV</a>
+	
+	
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 display-container opacity-design-min" id="home">
+  <div class="display-content-middle" style="white-space:nowrap; top:90% !important">
+    <span style="background-color:#0000 !important; letter-spacing: 10px; font-size: 24px!important; color: #fff!important;">MONA BARTLING</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="content-design container-content padding-content-64" id="about" style="padding-top: 10px !important; padding-bottom: 10px !important">
+  <h3 class="content-center" style="padding-bottom: 20px !important;">Research • Cartography • Geography • Design</h3>
+  <div class="col-design m6 content-center padding-content-large" style="opacity:90%">
+      <img src="res/me.jpg" class="round-img image-design " alt="Photo of Me" width="200" height="100">
+    </div>
+  <p style="text-align: justify;">I am a PhD candidate and researcher at the Department of Geoinformatics - Z_GIS at the University of Salzburg. 
+  I have a strong research focus on map design usability, map use context, and map design adaptations. 
+  I have 5+ years work experiences in digital agriculture where I worked in various international research institutes. </p>
+  <p style="text-align: justify;">I have a passion for cartographic design, and I am aiming to look at the margins of map design solutions. You can find <a href="res/cv.pdf" target=”_blank”>my full CV here!</a> </p>
+  <p style="text-align: justify;">
+  I enjoy hiking, yoga, and all sorts of water sports. I also collaborate with friends on <a href="https://farodesign.at" target=”_blank”>FARO.design</a> where we create geography-inspired t-shirt designs. 
+  </p>
+
+
+
+</div>
+
+
+<!-- Container (Portfolio Section) -->
+<div class="content-design container-content padding-content-64" id="portfolio" style="padding-bottom: 10px !important">
+  <h3 class="content-center">PUBLICATIONS</h3>
+  <p class="content-center" style="margin-top: -5px !important"><em>[selection]</em></p>
+  <p>
+  Bartling, M., Robinson, A. C., Resch, B., Eitzinger, A., & Atzmanstorfer, K. (2021). The Role of User Context in the Design of Mobile Map Applications. 
+  Cartography and Geographic Information Science. <a href="https://doi.org/10.1080/15230406.2021.1933595" target=”_blank”>https://doi.org/10.1080/15230406.2021.1933595</a>
+  </p>
+  <p>
+  Bartling, M., Resch, B., Trösterer, S., & Eitzinger, A. (2021). Evaluating PPGIS Usability in a Multi-National Field Study Combining Qualitative Surveys and Eye-Tracking. The Cartographic Journal. 
+  <a href="https://doi.org/10.1080/00087041.2020.1842143" target=”_blank”>https://doi.org/10.1080/00087041.2020.1842143</a>
+  </p>
+  <p>
+  Eitzinger, A., Bartling, M., Feil, C., Bonilla-Findji, O., Andrieu, N., & Jarvis, A. (2020). GeoFarmer App: A tool to complement extension services and foster active farmers participation and knowledge exchange. 
+  Report available:  
+  <a href="https://cgspace.cgiar.org/handle/10568/107365" target=”_blank”>https://cgspace.cgiar.org/handle/10568/107365</a>
+  </p>
+  <p>
+  Eitzinger, A., Cock, J., Atzmanstorfer, K., Binder, C. R., Läderach, P., Bonilla-Findji, O., Bartling, M., ... & Jarvis, A. (2019). GeoFarmer: A monitoring and feedback system for agricultural development projects. Computers and electronics in agriculture, 158, 109-121.  
+  <a href="https://doi.org/10.1016/j.compag.2019.01.049 " target=”_blank”>https://doi.org/10.1016/j.compag.2019.01.049 </a>
+  </p>
+  <p>
+  Bartling, M., Resch, B., Eitzinger, A., & Zurita-Arthos, L. (2019). A multi-national human–computer interaction evaluation of the public participatory GIS GeoCitizen. GI_Forum 2019, 7, 19-39. 
+  <a href="https://doi.org/10.1553/giscience2019_01_s19" target=”_blank”>https://doi.org/10.1553/giscience2019_01_s19</a>
+  </p>
+  <p>
+  Bartling, M., Sotelo, S., Eitzinger, A., & Atzmanstorfer, K. (2016). Press the Button: Online/Offline Mobile Applications in an Agricultural Context. GI_Forum 2016,, 4, 106-116. 
+  <a href="https://doi.org/10.1553/giscience2016_01_s106" target=”_blank”>https://doi.org/10.1553/giscience2016_01_s106</a>
+  </p>
+ </div>
+  
+  
+ <!-- Container (Community Section) -->
+<div class="content-design container-content padding-content-64" id="community" style="padding-bottom: 10px !important">
+  <h3 class="content-center">COMMUNITY ENGAGEMENT</h3>
+  <p class="content-center" style="margin-top: -5px !important"><em>[selection]</em></p>
+  
+  <p>
+  2021: “When things go wrong –conducting research during a pandemic” ICA workshop on Adaptable Research Methods For Empirical Research with Map Users 
+  <a href="https://cogvis.icaci.org/21_adaptable.html" target=”_blank”>(cogvis.icaci.org/21_adaptable.html)</a>
+  </p>
+  <p>
+  Since 2020: NACIS membership
+  </p>
+  <p>
+  2020: “Digital tools for farmers advisory and climate action” online webinar series of the CGIAR Platform for Big Data in Agriculture  
+  <a href="https://bigdata.cgiar.org/blog-post/webinar-digital-tools-for-farmers-advisory-and-climate-action/" target=”_blank”>(bigdata.cgiar.org/blog-post/webinar-digital-tools-for-farmers-advisory-and-climate-action)</a>
+  </p>
+  <p>
+  2015-2020: Thesis coordinator/supervisor at UNIGIS, Latin America
+  </p>
+  <p>
+  2018: “Smart monitoring of farm labor productivity” pitch invitation as one of the inspire challenge finalists at the Big Data in Agriculture Convention 2018, Nairobi, Kenya 
+  </p>
+  <p>
+  2017: “’Flat’ Learning Alliance for Extension” pitch invitation as one of the inspire challenge finalists at the Big Data in Agriculture Convention 2017, Cali, Colombia
+  </p>
+ </div>
+
+  
+
+ </div>
+
+
+
+<!-- Container (Contact Section) -->
+<div class="content-design container-content padding-content-64" id="contact">
+  <h3 class="content-center">CONTACT</h3>
+  <p>
+  <i class="fa fa-envelope fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
+  Email: <a href="mailto:mona.bartling@sbg.ac.at">mona.bartling@sbg.ac.at</a>
+  </p>
+  <p><i class="fa fa-university fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
+   University website: 
+  <a href="https://dk-giscience.zgis.net/research/students/students-2015/58-students2015/314-mona-bartling" target="_blank">Doctoral College GIScience</a>
+  </p>
+  <p>
+  <i class="fa fa-link fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
+  <a href="https://scholar.google.at/citations?user=3GoPCC0AAAAJ&hl=en" target="_blank">Google Scholar profile</a>
+  </p>
+  <p>
+  <i class="fa fa-link fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
+  <a href="https://orcid.org/0000-0001-8362-7543" target="_blank">orcid.org/0000-0001-8362-7543</a></p>
+  
+  <p><i class="fab fa-linkedin fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
+  <a href="https://www.linkedin.com/in/mona-bartling-b37aa298/" target="_blank">LinkedIn profile</a>
+  </p> 
+
+	
+  
+</div>
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="content-center content-black-design padding-content-64 opacity-design">
+  <a href="#home" class="button-design content-light-grey-design"><i class="fa fa-arrow-up margin-content-right"></i>To the top</a>
+  <p>
+	Mona Bartling 2021
+	</p>
+
+</footer>
+ 
+ 
+ 
+ 
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "bar-nav" + " card-nav" + " animate-content-top" + " content-white-design";
+    } else {
+        navbar.className = navbar.className.replace(" card-nav animate-content-top content-white-design", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("show-content") == -1) {
+        x.className += " show-content";
+    } else {
+        x.className = x.className.replace(" show-content", "");
+    }
+}
+</script>
+
+</body>
+</html>
