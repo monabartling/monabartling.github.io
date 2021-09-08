@@ -59,16 +59,20 @@ body, html {
     <a href="#home" class="bar-nav-item button-design" >MONA BARTLING</a>
     <a href="#portfolio" class="bar-nav-item button-design hide-content-small"> PUBLICATIONS</a> 
 	<a href="#community" class="bar-nav-item button-design hide-content-small"> COMMUNITY</a> 
+	<a href="#sketchbook" class="bar-nav-item button-design hide-content-small"> SKETCHBOOK</a> 
     <a href="#contact" class="bar-nav-item button-design hide-content-small"> CONTACT</a>
 	<a href="res/cv.pdf" target="_blank" class="bar-nav-item button-design hide-content-small"> CV</a>
+	<a href="https://farodesign.at" target="_blank" class="bar-nav-item button-design hide-content-small"><i class="fas fa-external-link-alt fa-fw hover-design-text-black"></i> FARO.design</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="bar-nav-block content-white-design hide-content hide-content-large hide-content-medium">
     <a href="#portfolio" class="bar-nav-item button-design" onclick="toggleFunction()">PORTFOLIO</a>
 	<a href="#community" class="bar-nav-item button-design" onclick="toggleFunction()">COMMUNITY</a>
+	<a href="#sketchbook" class="bar-nav-item button-design" onclick="toggleFunction()">SKETCHBOOK</a>
     <a href="#contact" class="bar-nav-item button-design" onclick="toggleFunction()">CONTACT</a>
 	<a href="res/cv.pdf" target="_blank" class="bar-nav-item button-design" onclick="toggleFunction()">CV</a>
+	<a href="https://farodesign.at" target="_blank" class="bar-nav-item button-design" onclick="toggleFunction()"><i class="fas fa-external-link-alt fa-fw hover-design-text-black"></i> FARO.design</a>
 	
 	
   </div>
@@ -88,7 +92,7 @@ body, html {
       <img src="res/me.jpg" class="round-img image-design " alt="Photo of Me" width="200" height="100">
     </div>
   <p style="text-align: justify;">I am a PhD candidate and researcher at the Department of Geoinformatics - Z_GIS at the University of Salzburg. 
-  I have a strong research focus on map design usability, map use context, and map design adaptations. 
+  I have a strong research focus on inclusive geospatial data visualization, map use context modeling, and map design adaptations. 
   I have 5+ years work experiences in digital agriculture where I worked in various international research institutes. </p>
   <p style="text-align: justify;">I have a passion for cartographic design, and I am aiming to look at the margins of map design solutions. You can find <a href="res/cv.pdf" target=”_blank”>my full CV here!</a> </p>
   <p style="text-align: justify;">
@@ -104,6 +108,10 @@ body, html {
 <div class="content-design container-content padding-content-64" id="portfolio" style="padding-bottom: 10px !important">
   <h3 class="content-center">PUBLICATIONS</h3>
   <p class="content-center" style="margin-top: -5px !important"><em>[selection]</em></p>
+  <p>
+  Bartling, M., Havas, C. R., Wegenkittl, S., Reichenbacher, T., & Resch, B. (2021). Modeling Patterns in Map Use Contexts and Mobile Map Design Usability. 
+  ISPRS International Journal of Geo-Information, 10(8), 527. <a href="https://doi.org/10.3390/ijgi10080527" target=”_blank”>https://doi.org/10.3390/ijgi10080527</a>
+  </p>
   <p>
   Bartling, M., Robinson, A. C., Resch, B., Eitzinger, A., & Atzmanstorfer, K. (2021). The Role of User Context in the Design of Mobile Map Applications. 
   Cartography and Geographic Information Science. <a href="https://doi.org/10.1080/15230406.2021.1933595" target=”_blank”>https://doi.org/10.1080/15230406.2021.1933595</a>
@@ -159,7 +167,57 @@ body, html {
   </p>
  </div>
 
-  
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+<div class="content-design container-content padding-content-64" style="padding-bottom: 10px !important" id="sketchbook">
+<h3 class="content-center">SKETCHBOOK</h3>
+  <p class="content-center" style="margin-top: -5px !important"><em>[selection]</em></p>
+<div class="row-padding-design content-center">
+    
+	<div class="col-design m3">
+      <img src="res/sundarbans.jpeg" style="width:100%; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Sundarbans mangrove forest (data: EC JRC/Google)">
+    </div>
+	
+	<div class="col-design m3">
+      <img src="res/purple_orange.png" style="width:100%; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Playing with hillshades in the Salzburg region (data: data.gv.at)">
+    </div>
+
+    <div class="col-design m3">
+      <img src="res/simplify.jpeg" style="width:100%; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Let's simplify lines and still maintain boundaries :) (data: OSM)">
+    </div>
+
+    <div class="col-design m3">
+      <img src="res/hillshade.png" style="width:100%; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Bryce Canyon hillshade (data: shadedrelief.com; credits: John Nelson)">
+    </div>
+  </div>
+
+  <div class="row-padding-design content-center section-content">
+    <div class="col-design m3">
+      <img src="res/greyscale.png" style="width:100%;; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Greyscale hillshades in the Salzburg region (data: data.gv.at)">
+    </div>
+
+    <div class="col-design m3">
+      <img src="res/amazonas.png" style="width:100%; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Amazonas water occurences (data: EC JRC/Google)">
+    </div>
+
+   
+    <div class="col-design m3">
+      <img src="res/seafloor_labels.png" style="width:100%; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Seafloor colors inspired hillshade of Salzburg region (data: data.gv.at; credits: John Nelson)">
+    </div>
+
+	<div class="col-design m3">
+      <img src="res/doetlingen.png" style="width:100%; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Village of Dötlingen (data: OSM)">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="modal-img content-black-design" onclick="this.style.display='none'">
+  <span class="button-design font-large content-black-design display-content-topright" title="Close Modal Image"><i class="fa fa-window-close"></i></span>
+  <div class="modal-img-content animate-zoom content-center content-transparent-design padding-content-64">
+    <img id="img01" class="image-design">
+    <p id="caption" class="opacity-design font-large"></p>
+  </div>
+</div>
 
  </div>
 
@@ -170,7 +228,7 @@ body, html {
   <h3 class="content-center">CONTACT</h3>
   <p>
   <i class="fa fa-envelope fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
-  Email: <a href="mailto:mona.bartling@sbg.ac.at">mona.bartling@sbg.ac.at</a>
+  Email: <a href="mailto:mona.bartling@sbg.ac.at">mona.bartling@plus.ac.at</a>
   </p>
   <p><i class="fa fa-university fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
    University website: 
