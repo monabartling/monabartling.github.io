@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Mona Bartling</title>
+<title>monabartling.github.io</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="res/style2.css">
@@ -30,7 +30,8 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('res/seafloor.png');
+  background-image: url('res/main_pic.jpg');
+  box-shadow: 0 0 10px 1px #8a8a8a57 inset;
   opacity:100% !important;
   min-height: 50%;
 }
@@ -42,7 +43,7 @@ body, html {
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
-    min-height: 400px;
+    min-height: 300px;
   }
 }
 </style>
@@ -56,198 +57,139 @@ body, html {
     <a class="bar-nav-item button-design hover-design-black hide-content-medium hide-content-large content-right-design" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="bar-nav-item button-design" >MONA BARTLING</a>
-    <a href="#portfolio" class="bar-nav-item button-design hide-content-small"> PUBLICATIONS</a> 
-	<a href="#community" class="bar-nav-item button-design hide-content-small"> COMMUNITY</a> 
-	<a href="#sketchbook" class="bar-nav-item button-design hide-content-small"> SKETCHBOOK</a> 
+    <a href="#home" class="bar-nav-item button-design" >HOME</a>
+    <a href="#portfolio" class="bar-nav-item button-design hide-content-small"> PUBLICATIONS</a>
+	<a href="#community" class="bar-nav-item button-design hide-content-small"> COMMUNITY</a>
     <a href="#contact" class="bar-nav-item button-design hide-content-small"> CONTACT</a>
-	<a href="res/cv.pdf" target="_blank" class="bar-nav-item button-design hide-content-small"> CV</a>
-	<a href="https://farodesign.at" target="_blank" class="bar-nav-item button-design hide-content-small"><i class="fas fa-external-link-alt fa-fw hover-design-text-black"></i> FARO.design</a>
+    <a href="novapp4coba-maps.html" class="bar-nav-item button-design hide-content-small"> PROJECT</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="bar-nav-block content-white-design hide-content hide-content-large hide-content-medium">
-    <a href="#portfolio" class="bar-nav-item button-design" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#portfolio" class="bar-nav-item button-design" onclick="toggleFunction()">PUBLICATIONS</a>
 	<a href="#community" class="bar-nav-item button-design" onclick="toggleFunction()">COMMUNITY</a>
-	<a href="#sketchbook" class="bar-nav-item button-design" onclick="toggleFunction()">SKETCHBOOK</a>
     <a href="#contact" class="bar-nav-item button-design" onclick="toggleFunction()">CONTACT</a>
-	<a href="res/cv.pdf" target="_blank" class="bar-nav-item button-design" onclick="toggleFunction()">CV</a>
-	<a href="https://farodesign.at" target="_blank" class="bar-nav-item button-design" onclick="toggleFunction()"><i class="fas fa-external-link-alt fa-fw hover-design-text-black"></i> FARO.design</a>
-	
-	
+    <a href="novapp4coba-maps.html" class="bar-nav-item button-design" onclick="toggleFunction()">PROJECT</a>
+
+
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 display-container opacity-design-min" id="home">
-  <div class="display-content-middle" style="white-space:nowrap; top:90% !important">
-    <span style="background-color:#0000 !important; letter-spacing: 10px; font-size: 24px!important; color: #fff!important;">MONA BARTLING</span>
-  </div>
 </div>
 
 <!-- Container (About Section) -->
-<div class="content-design container-content padding-content-64" id="about" style="padding-top: 10px !important; padding-bottom: 10px !important">
-  <h3 class="content-center" style="padding-bottom: 20px !important;">Research • Cartography • Geography • Design</h3>
+<div class="content-design container-content padding-content-64" id="about" style="padding-top: 40px !important; padding-bottom: 10px !important">
   <div class="col-design m6 content-center padding-content-large" style="opacity:90%">
-      <img src="res/me.jpg" class="round-img image-design " alt="Photo of Me" width="200" height="100">
+      <img src="res/me.jpg" class="round-img image-design " alt="Photo of Mona" width="150" height="100" style="padding-top:10px">
     </div>
-  <p style="text-align: justify;">I am a PhD candidate and researcher at the Department of Geoinformatics - Z_GIS at the University of Salzburg. 
-  I have a strong research focus on inclusive geospatial data visualization, map use context modeling, and map design adaptations. 
-  I have 5+ years work experiences in digital agriculture where I worked in various international research institutes. </p>
-  <p style="text-align: justify;">I have a passion for cartographic design, and I am aiming to look at the margins of map design solutions. You can find <a href="res/cv.pdf" target=”_blank”>my full CV here!</a> </p>
-  <p style="text-align: justify;">
-  I enjoy hiking, yoga, and all sorts of water sports. I also collaborate with friends on <a href="https://farodesign.at" target=”_blank”>FARO.design</a> where we create geography-inspired t-shirt designs. 
-  </p>
-
-
-
+  <h3>Mona Bartling</h3>
+  <p style="text-align: justify;">My name is Mona and I am a postdoctoral researcher at the University of Zurich, Switzerland.
+    I am recipient of the FWF funded Erwin-Schrödinger fellowship.
+  I have a strong research focus on inclusive geospatial data visualization, map use context modeling, and map design adaptations.</p>
 </div>
 
 
 <!-- Container (Portfolio Section) -->
-<div class="content-design container-content padding-content-64" id="portfolio" style="padding-bottom: 10px !important">
+<div class="content-design container-content padding-content-30" id="portfolio" style="padding-bottom: 10px !important">
   <h3 class="content-center">PUBLICATIONS</h3>
   <p class="content-center" style="margin-top: -5px !important"><em>[selection]</em></p>
   <p>
-  Bartling, M., Havas, C. R., Wegenkittl, S., Reichenbacher, T., & Resch, B. (2021). Modeling Patterns in Map Use Contexts and Mobile Map Design Usability. 
+  Bartling, M., Resch, B., Reichenbacher, T., Havas, C. R., Robinson, A. C., Fabrikant, S. I., & Blaschke, T. (2022).
+  Adapting mobile map application designs to map use context: A review and call for action on potential future research themes.
+  Cartography and Geographic Information Science, 1–15. <a href="https://doi.org/10.1080/15230406.2021.2015720" target=”_blank”>https://doi.org/10.1080/15230406.2021.2015720</a>
+  </p>
+  <p>
+  Bartling, M., Havas, C. R., Wegenkittl, S., Reichenbacher, T., & Resch, B. (2021). Modeling Patterns in Map Use Contexts and Mobile Map Design Usability.
   ISPRS International Journal of Geo-Information, 10(8), 527. <a href="https://doi.org/10.3390/ijgi10080527" target=”_blank”>https://doi.org/10.3390/ijgi10080527</a>
   </p>
   <p>
-  Bartling, M., Robinson, A. C., Resch, B., Eitzinger, A., & Atzmanstorfer, K. (2021). The Role of User Context in the Design of Mobile Map Applications. 
+  Bartling, M., Robinson, A. C., Resch, B., Eitzinger, A., & Atzmanstorfer, K. (2021). The Role of User Context in the Design of Mobile Map Applications.
   Cartography and Geographic Information Science. <a href="https://doi.org/10.1080/15230406.2021.1933595" target=”_blank”>https://doi.org/10.1080/15230406.2021.1933595</a>
   </p>
   <p>
-  Bartling, M., Resch, B., Trösterer, S., & Eitzinger, A. (2021). Evaluating PPGIS Usability in a Multi-National Field Study Combining Qualitative Surveys and Eye-Tracking. The Cartographic Journal. 
+  Bartling, M., Resch, B., Trösterer, S., & Eitzinger, A. (2021). Evaluating PPGIS Usability in a Multi-National Field Study Combining Qualitative Surveys and Eye-Tracking. The Cartographic Journal.
   <a href="https://doi.org/10.1080/00087041.2020.1842143" target=”_blank”>https://doi.org/10.1080/00087041.2020.1842143</a>
   </p>
   <p>
-  Eitzinger, A., Bartling, M., Feil, C., Bonilla-Findji, O., Andrieu, N., & Jarvis, A. (2020). GeoFarmer App: A tool to complement extension services and foster active farmers participation and knowledge exchange. 
-  Report available:  
+  Eitzinger, A., Bartling, M., Feil, C., Bonilla-Findji, O., Andrieu, N., & Jarvis, A. (2020). GeoFarmer App: A tool to complement extension services and foster active farmers participation and knowledge exchange.
+  Report available:
   <a href="https://cgspace.cgiar.org/handle/10568/107365" target=”_blank”>https://cgspace.cgiar.org/handle/10568/107365</a>
   </p>
   <p>
-  Eitzinger, A., Cock, J., Atzmanstorfer, K., Binder, C. R., Läderach, P., Bonilla-Findji, O., Bartling, M., ... & Jarvis, A. (2019). GeoFarmer: A monitoring and feedback system for agricultural development projects. Computers and electronics in agriculture, 158, 109-121.  
+  Eitzinger, A., Cock, J., Atzmanstorfer, K., Binder, C. R., Läderach, P., Bonilla-Findji, O., Bartling, M., ... & Jarvis, A. (2019). GeoFarmer: A monitoring and feedback system for agricultural development projects. Computers and electronics in agriculture, 158, 109-121.
   <a href="https://doi.org/10.1016/j.compag.2019.01.049 " target=”_blank”>https://doi.org/10.1016/j.compag.2019.01.049 </a>
   </p>
   <p>
-  Bartling, M., Resch, B., Eitzinger, A., & Zurita-Arthos, L. (2019). A multi-national human–computer interaction evaluation of the public participatory GIS GeoCitizen. GI_Forum 2019, 7, 19-39. 
+  Bartling, M., Resch, B., Eitzinger, A., & Zurita-Arthos, L. (2019). A multi-national human–computer interaction evaluation of the public participatory GIS GeoCitizen. GI_Forum 2019, 7, 19-39.
   <a href="https://doi.org/10.1553/giscience2019_01_s19" target=”_blank”>https://doi.org/10.1553/giscience2019_01_s19</a>
   </p>
   <p>
-  Bartling, M., Sotelo, S., Eitzinger, A., & Atzmanstorfer, K. (2016). Press the Button: Online/Offline Mobile Applications in an Agricultural Context. GI_Forum 2016,, 4, 106-116. 
+  Bartling, M., Sotelo, S., Eitzinger, A., & Atzmanstorfer, K. (2016). Press the Button: Online/Offline Mobile Applications in an Agricultural Context. GI_Forum 2016,, 4, 106-116.
   <a href="https://doi.org/10.1553/giscience2016_01_s106" target=”_blank”>https://doi.org/10.1553/giscience2016_01_s106</a>
   </p>
  </div>
-  
-  
+
+
  <!-- Container (Community Section) -->
 <div class="content-design container-content padding-content-64" id="community" style="padding-bottom: 10px !important">
   <h3 class="content-center">COMMUNITY ENGAGEMENT</h3>
   <p class="content-center" style="margin-top: -5px !important"><em>[selection]</em></p>
-  
+
   <p>
-  2021: “When things go wrong –conducting research during a pandemic” ICA workshop on Adaptable Research Methods For Empirical Research with Map Users 
+  2021: “When things go wrong –conducting research during a pandemic” ICA workshop on Adaptable Research Methods For Empirical Research with Map Users
   <a href="https://cogvis.icaci.org/21_adaptable.html" target=”_blank”>(cogvis.icaci.org/21_adaptable.html)</a>
   </p>
   <p>
   Since 2020: NACIS membership
   </p>
   <p>
-  2020: “Digital tools for farmers advisory and climate action” online webinar series of the CGIAR Platform for Big Data in Agriculture  
+  2020: “Digital tools for farmers advisory and climate action” online webinar series of the CGIAR Platform for Big Data in Agriculture
   <a href="https://bigdata.cgiar.org/blog-post/webinar-digital-tools-for-farmers-advisory-and-climate-action/" target=”_blank”>(bigdata.cgiar.org/blog-post/webinar-digital-tools-for-farmers-advisory-and-climate-action)</a>
   </p>
   <p>
   2015-2020: Thesis coordinator/supervisor at UNIGIS, Latin America
   </p>
   <p>
-  2018: “Smart monitoring of farm labor productivity” pitch invitation as one of the inspire challenge finalists at the Big Data in Agriculture Convention 2018, Nairobi, Kenya 
+  2018: “Smart monitoring of farm labor productivity” pitch invitation as one of the inspire challenge finalists at the Big Data in Agriculture Convention 2018, Nairobi, Kenya
   </p>
   <p>
   2017: “’Flat’ Learning Alliance for Extension” pitch invitation as one of the inspire challenge finalists at the Big Data in Agriculture Convention 2017, Cali, Colombia
   </p>
  </div>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-<div class="content-design container-content padding-content-64" style="padding-bottom: 10px !important" id="sketchbook">
-<h3 class="content-center">SKETCHBOOK</h3>
-  <p class="content-center" style="margin-top: -5px !important"><em>[selection]</em></p>
-<div class="row-padding-design content-center">
-    
-	<div class="col-design m3">
-      <img src="res/sundarbans.jpeg" style="width:100%; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Sundarbans mangrove forest (data: EC JRC/Google)">
-    </div>
-	
-	<div class="col-design m3">
-      <img src="res/purple_orange.png" style="width:100%; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Playing with hillshades in the Salzburg region (data: data.gv.at)">
-    </div>
 
-    <div class="col-design m3">
-      <img src="res/simplify.jpeg" style="width:100%; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Let's simplify lines and still maintain boundaries :) (data: OSM)">
-    </div>
 
-    <div class="col-design m3">
-      <img src="res/hillshade.png" style="width:100%; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Bryce Canyon hillshade (data: shadedrelief.com; credits: John Nelson)">
-    </div>
-  </div>
 
-  <div class="row-padding-design content-center section-content">
-    <div class="col-design m3">
-      <img src="res/greyscale.png" style="width:100%;; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Greyscale hillshades in the Salzburg region (data: data.gv.at)">
-    </div>
-
-    <div class="col-design m3">
-      <img src="res/amazonas.png" style="width:100%; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Amazonas water occurences (data: EC JRC/Google)">
-    </div>
-
-   
-    <div class="col-design m3">
-      <img src="res/seafloor_labels.png" style="width:100%; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Seafloor colors inspired hillshade of Salzburg region (data: data.gv.at; credits: John Nelson)">
-    </div>
-
-	<div class="col-design m3">
-      <img src="res/doetlingen.png" style="width:100%; padding-top: 5px !important" onclick="onClick(this)" class="hover-design-opacity" alt="Village of Dötlingen (data: OSM)">
-    </div>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="modal-img content-black-design" onclick="this.style.display='none'">
-  <span class="button-design font-large content-black-design display-content-topright" title="Close Modal Image"><i class="fa fa-window-close"></i></span>
-  <div class="modal-img-content animate-zoom content-center content-transparent-design padding-content-64">
-    <img id="img01" class="image-design">
-    <p id="caption" class="opacity-design font-large"></p>
-  </div>
-</div>
-
- </div>
 
 
 
 <!-- Container (Contact Section) -->
 <div class="content-design container-content padding-content-64" id="contact">
   <h3 class="content-center">CONTACT</h3>
-  <p>
+  <!-- <p>
   <i class="fa fa-envelope fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
   Email: <a href="mailto:mona.bartling@sbg.ac.at">mona.bartling@plus.ac.at</a>
-  </p>
-  <p><i class="fa fa-university fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
-   University website: 
+  </p> -->
+  <!-- <p><i class="fa fa-university fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
+   University website:
   <a href="https://dk-giscience.zgis.net/research/students/students-2015/58-students2015/314-mona-bartling" target="_blank">Doctoral College GIScience</a>
-  </p>
+  </p> -->
   <p>
   <i class="fa fa-link fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
-  <a href="https://scholar.google.at/citations?user=3GoPCC0AAAAJ&hl=en" target="_blank">Google Scholar profile</a>
+  <a href="https://scholar.google.com/citations?user=OCTxLd8AAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
   </p>
   <p>
   <i class="fa fa-link fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
   <a href="https://orcid.org/0000-0001-8362-7543" target="_blank">orcid.org/0000-0001-8362-7543</a></p>
-  
-  <p><i class="fab fa-linkedin fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
-  <a href="https://www.linkedin.com/in/mona-bartling-b37aa298/" target="_blank">LinkedIn profile</a>
-  </p> 
 
-	
-  
+  <p><i class="fab fa-linkedin fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
+  <a href="https://www.linkedin.com/in/mona-bartling-b37aa298/" target="_blank">LinkedIn</a>
+  </p>
+
+
+
 </div>
 
 
@@ -259,15 +201,15 @@ body, html {
 <footer class="content-center content-black-design padding-content-64 opacity-design">
   <a href="#home" class="button-design content-light-grey-design"><i class="fa fa-arrow-up margin-content-right"></i>To the top</a>
   <p>
-	Mona Bartling 2021
+	Mona Bartling 2022
 	</p>
 
 </footer>
- 
- 
- 
- 
- 
+
+
+
+
+
 <script>
 // Modal Image Gallery
 function onClick(element) {

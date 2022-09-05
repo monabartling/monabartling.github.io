@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<title>monabartling.github.io</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="res/style2.css">
+<link rel="stylesheet" href="res/font_google_lato.css">
+<link rel="stylesheet" href="res/fontawesome/css/fontawesome.min.css">
+<link rel="stylesheet" href="res/fontawesome/css/brands.css">
+<link rel="stylesheet" href="res/fontawesome/css/solid.css">
+<link rel="shortcut icon" type="image/x-icon" href="res/favicon.png">
+
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('res/main_pic.jpg');
+  box-shadow: 0 0 10px 1px #8a8a8a57 inset;
+  opacity:100% !important;
+  min-height: 50%;
+}
+
+.font-wide {letter-spacing: 10px;}
+.hover-design-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 300px;
+  }
+}
+</style>
+
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="top-content" style="color:white">
+    <div class="bar-nav" id="myNavbar">
+      <a class="bar-nav-item button-design hover-design-black hide-content-medium hide-content-large content-right-design" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="bar-nav-item button-design" >HOME</a>
+      <a href="#portfolio" class="bar-nav-item button-design hide-content-small"> PUBLICATIONS</a>
+  	<a href="#community" class="bar-nav-item button-design hide-content-small"> COMMUNITY</a>
+      <a href="#contact" class="bar-nav-item button-design hide-content-small"> CONTACT</a>
+      <a href="novapp4coba-maps.html" class="bar-nav-item button-design hide-content-small"> PROJECT</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="bar-nav-block content-white-design hide-content hide-content-large hide-content-medium">
+      <a href="#portfolio" class="bar-nav-item button-design" onclick="toggleFunction()">PUBLICATIONS</a>
+  	<a href="#community" class="bar-nav-item button-design" onclick="toggleFunction()">COMMUNITY</a>
+      <a href="#contact" class="bar-nav-item button-design" onclick="toggleFunction()">CONTACT</a>
+      <a href="novapp4coba-maps.html" class="bar-nav-item button-design" onclick="toggleFunction()">PROJECT</a>
+
+
+    </div>
+  </div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 display-container opacity-design-min" id="home">
+</div>
+
+<!-- Container (About Section) -->
+<div class="content-design container-content padding-content-64" id="about" style="padding-top: 40px !important; padding-bottom: 10px !important">
+
+  <h3>Novel approaches for context-based map design adaptation</h3>
+  <p style="text-align: justify;">
+    *Beschreibungstext*
+  </p>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div class="content-design container-content padding-content-64" id="contact">
+  <h3 class="content-center"></h3>
+  <!-- <p>
+  <i class="fa fa-envelope fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
+  Email: <a href="mailto:mona.bartling@sbg.ac.at">mona.bartling@plus.ac.at</a>
+  </p> -->
+  <!-- <p><i class="fa fa-university fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
+   University website:
+  <a href="https://dk-giscience.zgis.net/research/students/students-2015/58-students2015/314-mona-bartling" target="_blank">Doctoral College GIScience</a>
+  </p> -->
+  <p>
+  <i class="fa fa-link fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
+  <a href="https://list.fwf.ac.at/de/wissenschaft-konkret/im-fokus-schroedinger/schroedinger-liste/2022/426229"
+  target="_blank">FWF Project Website</a>
+  </p>
+
+
+<p><i class="fa fa-university fa-fw hover-design-text-black margin-content-right" style="font-size: 20px!important"></i>
+<a href="https://www.geo.uzh.ch/en/units/giva.html" target="_blank">University of Zurich</a>
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="content-center content-black-design padding-content-64 opacity-design">
+  <a href="#home" class="button-design content-light-grey-design"><i class="fa fa-arrow-up margin-content-right"></i>To the top</a>
+  <p>
+	Mona Bartling 2022
+	</p>
+
+</footer>
+
+
+
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "bar-nav" + " card-nav" + " animate-content-top" + " content-white-design";
+    } else {
+        navbar.className = navbar.className.replace(" card-nav animate-content-top content-white-design", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("show-content") == -1) {
+        x.className += " show-content";
+    } else {
+        x.className = x.className.replace(" show-content", "");
+    }
+}
+</script>
+
+</body>
+</html>
