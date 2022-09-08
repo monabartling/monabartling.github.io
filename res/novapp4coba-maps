@@ -3,10 +3,10 @@
 <title>monabartling.github.io</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="res/style2.css">
-<link rel="stylesheet" href="res/font_google_lato.css">
-<link rel="stylesheet" href="res/font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="shortcut icon" type="image/x-icon" href="res/favicon.png">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="font_google_lato.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 
 
 
@@ -28,7 +28,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('res/main_pic.jpg');
+  background-image: url('main_pic.jpg');
   box-shadow: 0 0 10px 1px #8a8a8a57 inset;
   opacity:100% !important;
   min-height: 50%;
@@ -55,18 +55,18 @@ body, html {
       <a class="bar-nav-item button-design hover-design-black hide-content-medium hide-content-large content-right-design" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
       </a>
-      <a href="index.html#home" class="bar-nav-item button-design" >HOME</a>
-      <a href="index.html#portfolio" class="bar-nav-item button-design hide-content-small"> PUBLICATIONS</a>
-  	<a href="index.html#community" class="bar-nav-item button-design hide-content-small"> COMMUNITY</a>
-      <a href="index.html#contact" class="bar-nav-item button-design hide-content-small"> CONTACT</a>
+      <a href="../index.html#home" class="bar-nav-item button-design" >HOME</a>
+      <a href="../index.html#portfolio" class="bar-nav-item button-design hide-content-small"> PUBLICATIONS</a>
+  	<a href="../index.html#community" class="bar-nav-item button-design hide-content-small"> COMMUNITY</a>
+      <a href="../index.html#contact" class="bar-nav-item button-design hide-content-small"> CONTACT</a>
       <a href="novapp4coba-maps" class="bar-nav-item button-design hide-content-small"> ONGOING RESEARCH</a>
     </div>
 
     <!-- Navbar on small screens -->
     <div id="navDemo" class="bar-nav-block content-white-design hide-content hide-content-large hide-content-medium">
-      <a href="index.html#portfolio" class="bar-nav-item button-design" onclick="toggleFunction()">PUBLICATIONS</a>
-  	<a href="index.html#community" class="bar-nav-item button-design" onclick="toggleFunction()">COMMUNITY</a>
-      <a href="index.html#contact" class="bar-nav-item button-design" onclick="toggleFunction()">CONTACT</a>
+      <a href="../index.html#portfolio" class="bar-nav-item button-design" onclick="toggleFunction()">PUBLICATIONS</a>
+  	<a href="../index.html#community" class="bar-nav-item button-design" onclick="toggleFunction()">COMMUNITY</a>
+      <a href="../index.html#contact" class="bar-nav-item button-design" onclick="toggleFunction()">CONTACT</a>
       <a href="novapp4coba-maps" class="bar-nav-item button-design" onclick="toggleFunction()">ONGOING RESEARCH</a>
 
 
