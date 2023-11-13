@@ -10,23 +10,23 @@ var config = {
     theme: 'dark',
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
-    title: 'The Title Text of this Story',
-    subtitle: 'A descriptive and interesting subtitle to draw in the reader',
-    byline: 'By a Digital Storyteller',
-    footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    title: 'Eine Reise, die Down Under ist',
+    subtitle: '5 1/2 Wochen in Australien',
+    //byline: 'By a Digital Storyteller',
+    //footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
-            id: 'first_day',
+            id: 'abflug',
             alignment: 'left',
             hidden: false,
             title: 'Tag Null: Der Beginn einer langen Reise',
             image: 'images/flughafen_hh.jpeg',
             description: 'Es geht los. Die Koffer sind gepackt und wir machen uns von Brettorf über Bremen nach Hamburg auf. Jetzt heißts ab in die Blechbüchse für die nächsten 20 Stunden!',
             location: {
-                center: [14.20450, 50.64347],
-                zoom: 3.93,
-                pitch: 45.00,
-                bearing: -40.00
+              center: [8.46821, 52.93539],
+              zoom: 7.54,
+              pitch: 33.00,
+              bearing: -39.20
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -45,31 +45,31 @@ var config = {
                 // }
             ]
         },
-        // {
-        //     id: 'second-identifier',
-        //     alignment: 'right',
-        //     hidden: false,
-        //     title: 'Second Title',
-        //     image: './path/to/image/source.png',
-        //     description: 'Text, text, text <img src="images/brisbane_1.jpeg"> <img src="images/brisbane_1.jpeg">',
-        //     location: {
-        //         center: [-77.020636, 38.886900],
-        //         zoom: 8.5,
-        //         pitch: 60,
-        //         bearing: -43.2,
-        //         // flyTo additional controls-
-        //         // These options control the flight curve, making it move
-        //         // slowly and zoom out almost completely before starting
-        //         // to pan.
-        //         //speed: 2, // make the flying slow
-        //         //curve: 1, // change the speed at which it zooms out
-        //     },
-        //     mapAnimation: 'flyTo',
-        //     rotateAnimation: true,
-        //     callback: '',
-        //     onChapterEnter: [],
-        //     onChapterExit: []
-        // },
+        {
+            id: 'flug',
+            alignment: 'left',
+            hidden: false,
+            title: 'Ab nach Brisbane!',
+            image: 'images/flughafen_brisbane.jpeg',
+            description: 'Angekommen! Juhu!',
+            location: {
+              center: [151.76011, -28.19677],
+              zoom: 6.49,
+              pitch: 33.00,
+              bearing: -39.20,
+                // flyTo additional controls-
+                // These options control the flight curve, making it move
+                // slowly and zoom out almost completely before starting
+                // to pan.
+                speed: 0.5, // make the flying slow
+                curve: 2, // change the speed at which it zooms out
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
         // {
         //     id: 'third-identifier',
         //     alignment: 'left',
