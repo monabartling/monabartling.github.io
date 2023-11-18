@@ -32,17 +32,17 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'line_travel',
-                //     opacity: 0.5
-                //     //duration: 5000
-                // }
+                {
+                    layer: '01.10.23',
+                    opacity: 1
+                    //duration: 5000
+                }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'line_travel',
-                //     opacity: 0
-                // }
+                {
+                    layer: '01.10.23',
+                    opacity: 0.5
+                }
             ]
         },
         {
@@ -53,21 +53,27 @@ var config = {
             image: 'images/flughafen_brisbane.jpeg',
             description: 'Angekommen! Juhu!',
             location: {
-              center: [151.76011, -28.19677],
-              zoom: 6.49,
-              pitch: 33.00,
-              bearing: -39.20,
+              center: [152.80788, -27.64620],
+              zoom: 8.25,
+              pitch: 45.00,
+              bearing: -40.00,
                 // flyTo additional controls-
                 // These options control the flight curve, making it move
                 // slowly and zoom out almost completely before starting
                 // to pan.
-                speed: 0.5, // make the flying slow
+                speed: 0.4, // make the flying slow
                 curve: 2, // change the speed at which it zooms out
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
+            onChapterEnter: [
+              {
+                  layer: '02.10.23',
+                  opacity: 1
+                  //duration: 5000
+              }
+            ],
             onChapterExit: []
         },
         // {
