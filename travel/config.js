@@ -32,16 +32,16 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                {
-                    layer: '01.10.23',
-                    opacity: 1
-                    //duration: 5000
-                }
+                // {
+                //     layer: '01.10.23',
+                //     opacity: 1
+                //     //duration: 5000
+                // }
             ],
             onChapterExit: [
                 {
                     layer: '01.10.23',
-                    opacity: 0.5
+                    opacity: 0
                 }
             ]
         },
